@@ -16,5 +16,32 @@
         tools:layout_editor_absoluteX="170dp"
         tools:layout_editor_absoluteY="46dp"
          />
+    <RelativeLayout
+        android:id="@+id/sociallogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/intent"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="30dp"
+            app:srcCompat="@drawable/ic_facebook" />
 
+        <ImageView
+            android:id="@+id/google"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/facebook"
+            android:layout_marginLeft="30dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_google" />
+    </RelativeLayout>
 </RelativeLayout>
